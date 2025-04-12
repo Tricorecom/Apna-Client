@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ApnaClient - Final Year Project Help</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/@popmotion/popcorn@0.4.1/dist/popcorn.min.js"></script>
+  <script src="https://unpkg.com/framer-motion@4.1.17/dist/framer-motion.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.2.2/dist/cdn.min.js" defer></script>
+</head>
+<body class="bg-gradient-to-r from-blue-100 via-white to-pink-100 text-gray-900">
+
+  <!-- Navbar Section -->
+  <nav class="bg-white shadow-lg">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="#" class="text-3xl font-bold text-indigo-600">ApnaClient</a>
+      <div class="space-x-6">
+        <a href="#services" class="text-lg text-gray-600 hover:text-indigo-600">Services</a>
+        <a href="#pricing" class="text-lg text-gray-600 hover:text-indigo-600">Pricing</a>
+        <a href="#testimonials" class="text-lg text-gray-600 hover:text-indigo-600">Testimonials</a>
+        <a href="#contact" class="text-lg text-gray-600 hover:text-indigo-600">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="py-16">
+    <div class="max-w-4xl mx-auto text-center animate-pulse">
+      <h1 class="text-5xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-pink-500">🚀 ApnaClient</h1>
+      <p class="text-xl font-medium text-gray-700">Final Year Project? Code + Report + PPT + Demo – Sab kuch milega yahaan, bina stress ke!</p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-16 bg-gradient-to-br from-white to-blue-100">
+    <div class="max-w-5xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-10">💼 Choose Your Package</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-2xl shadow-xl transform hover:scale-105 transition-all duration-300">
+          <h3 class="text-2xl font-semibold mb-4">Basic</h3>
+          <p>✅ Code + Report</p>
+          <p class="mt-6 font-bold text-xl text-green-600">₹1000</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow-xl transform hover:scale-105 transition-all duration-300">
+          <h3 class="text-2xl font-semibold mb-4">Standard</h3>
+          <p>✅ Code + Report + PPT</p>
+          <p class="mt-6 font-bold text-xl text-yellow-600">₹1300</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow-xl transform hover:scale-105 transition-all duration-300">
+          <h3 class="text-2xl font-semibold mb-4">Premium</h3>
+          <p>✅ Code + Report + PPT + Demo Video</p>
+          <p class="mt-6 font-bold text-xl text-red-600">₹2000</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="py-16 bg-gradient-to-br from-blue-50 to-white">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-center mb-10">🌟 Student Testimonials</h2>
+      <div class="space-y-8 overflow-hidden">
+        <!-- Testimonial 1 -->
+        <div class="bg-white p-6 rounded-xl shadow-lg">
+          <p class="text-xl font-medium text-gray-700">"ApnaClient made my project submission easy and smooth. The code quality was great and report was very detailed!"</p>
+          <p class="mt-4 font-semibold text-gray-600">- Ananya Mehta</p>
+        </div>
+        <!-- Testimonial 2 -->
+        <div class="bg-white p-6 rounded-xl shadow-lg">
+          <p class="text-xl font-medium text-gray-700">"Amazing service! I got everything from PPT to Demo video, and the project worked perfectly!"</p>
+          <p class="mt-4 font-semibold text-gray-600">- Rajesh Kumar</p>
+        </div>
+        <!-- Testimonial 3 -->
+        <div class="bg-white p-6 rounded-xl shadow-lg">
+          <p class="text-xl font-medium text-gray-700">"I was stuck on my project for days. ApnaClient helped me get everything in time. Very professional!"</p>
+          <p class="mt-4 font-semibold text-gray-600">- Simran Verma</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-gradient-to-r from-white to-blue-100">
+    <div class="max-w-3xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">📥 Submit Your Project Details</h2>
+      <form class="bg-white p-8 rounded-xl shadow-lg space-y-6 animate-fadeIn" action="https://formsubmit.co/deepanshudb1@oksbi" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="project_name" placeholder="📘 Project Name" required class="w-full p-3 border rounded-lg">
+        <input type="email" name="email" placeholder="📧 Email" required class="w-full p-3 border rounded-lg">
+        <input type="tel" name="phone" placeholder="📱 Phone Number" required class="w-full p-3 border rounded-lg">
+        <input type="text" name="college" placeholder="🎓 College Name" required class="w-full p-3 border rounded-lg">
+        <select name="package" class="w-full p-3 border rounded-lg" required>
+          <option value="basic">Basic - ₹1000</option>
+          <option value="standard">Standard - ₹1300</option>
+          <option value="premium">Premium - ₹2000</option>
+        </select>
+        <button type="submit" class="w-full bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-3 rounded-xl font-semibold hover:opacity-90 transition duration-300">🚀 Submit & Pay ₹10</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- UPI Section -->
+  <section class="py-16">
+    <div class="text-center">
+      <p class="text-lg mb-4">Pay ₹10 to confirm your enquiry:</p>
+      <div class="flex justify-center items-center gap-4">
+        <!-- UPI QR Code -->
+        <img src="./WhatsApp Image 2025-04-12 at 12.58.17_92683dd8.jpg" alt="UPI QR" class="w-32 h-32">
+        <button onclick="navigator.clipboard.writeText('deepanshudb1@oksbi')" class="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600">Copy UPI ID</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-8 text-sm text-gray-600">
+    Made with ❤️ by ApnaClient | ApnaClient © 2025
+  </footer>
+
+  <style>
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fadeIn {
+      animation: fadeIn 1.2s ease-in-out both;
+    }
+
+    /* Horizontal Scroll Effect for Testimonials */
+    .space-y-8 {
+      animation: scrollText 10s linear infinite;
+    }
+    @keyframes scrollText {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+  </style>
+
+</body>
+</html>
